@@ -1,0 +1,24 @@
+{
+  "Parameters" : { 
+    "AppName": "demo-app",
+    "EnvName": "test",
+    "WorkloadName": "lb-svc",
+    "ContainerImage": "921176085839.dkr.ecr.ap-northeast-2.amazonaws.com/demo-app/lb-svc:3bbe701",
+    "TaskCPU": "256",
+    "TaskMemory": "512",
+    "TaskCount": "1",
+    "LogRetention": "30",
+    "AddonsTemplateURL": "",
+    "ContainerPort": "80",
+    "RulePath": "/",
+    "HTTPSEnabled": "false",
+    "TargetContainer": "lb-svc",
+    "TargetPort": "80",
+    "Stickiness": "false"
+  },
+  "Tags": { 
+    "copilot-application": "demo-app",
+    "copilot-environment": "test",
+    "copilot-service": "lb-svc"
+  }
+}
